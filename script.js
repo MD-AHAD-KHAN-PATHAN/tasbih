@@ -73,4 +73,8 @@ allahuakbarDecriment.addEventListener('click', function(){
 
 //Reset Button
 
-
+reset.addEventListener('click', function() {
+    subhanAllah.innerText = 0;
+    alhamdulliha.innerText = 0;
+    allahuakbar.innerText = 0;
+})
