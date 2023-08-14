@@ -22,6 +22,7 @@ subhanAllahIncriment.addEventListener('click', function(){
     subhanAllahInitialValue++;
     if(subhanAllahInitialValue > 33)
     {
+        subhanAllahInitialValue = 33;
         return alert("You can't add value !");
     }
     subhanAllah.innerText = subhanAllahInitialValue;
@@ -30,6 +31,7 @@ subhanAllahDecriment.addEventListener('click', function(){
     subhanAllahInitialValue--;
     if(subhanAllahInitialValue < 0)
     {
+        subhanAllahInitialValue = 0;
         return alert("You can't decriment negative value !");
     }
     subhanAllah.innerText = subhanAllahInitialValue;
@@ -40,6 +42,7 @@ alhamdullihaIncriment.addEventListener('click', function(){
     alhamdullihaInitialValue++;
     if(alhamdullihaInitialValue > 33)
     {
+        alhamdullihaInitialValue = 33;
         return alert("You can't add value !");
     }
     alhamdulliha.innerText = alhamdullihaInitialValue;
@@ -48,6 +51,7 @@ alhamdullihaDecriment.addEventListener('click', function(){
     alhamdullihaInitialValue--;
     if(alhamdullihaInitialValue < 0)
     {
+        alhamdullihaInitialValue = 0;
         return alert("You can't decriment negative value !");
     }
     alhamdulliha.innerText = alhamdullihaInitialValue;
@@ -58,6 +62,7 @@ allahuakbarIncriment.addEventListener('click', function(){
     allahuakbarInitialValue++;
     if(allahuakbarInitialValue > 33)
     {
+        allahuakbarInitialValue = 33;
         return alert("You can't add value !");
     }
     allahuakbar.innerText = allahuakbarInitialValue;
@@ -66,6 +71,7 @@ allahuakbarDecriment.addEventListener('click', function(){
     allahuakbarInitialValue--;
     if(allahuakbarInitialValue < 0)
     {
+        allahuakbarInitialValue = 0;
         return alert("You can't decriment negative value !");
     }
     allahuakbar.innerText = allahuakbarInitialValue;
@@ -74,7 +80,10 @@ allahuakbarDecriment.addEventListener('click', function(){
 //Reset Button
 
 reset.addEventListener('click', function() {
-    subhanAllah.innerText = 0;
-    alhamdulliha.innerText = 0;
-    allahuakbar.innerText = 0;
+    subhanAllahInitialValue = 0;
+    alhamdullihaInitialValue = 0;
+    allahuakbarInitialValue = 0;
+    subhanAllah.innerText = subhanAllahInitialValue;
+    alhamdulliha.innerText = alhamdullihaInitialValue;
+    allahuakbar.innerText = allahuakbarInitialValue;
 })
